@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Exam</title>
+</head>
+<body>
+
+  <div class="navbar">
+    <input type="text" placeholder="Enter Fruit or Legume" id="newElement">
+    <div>
+      <label><input type="radio" name="radio" value="fruit"> Fruits</label>
+      <label><input type="radio" name="radio" value="legume"> Legumes</label>
+    </div>
+    <div>
+      <button type="button" id="specific">Add to specific list</button>
+      <button type="button" id="general">Add to general list</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <button type="button" id="search">Search for item</button>
+      <button type="button" id="delete">Delete an item</button>
+      <input type="text" class="search_item" placeholder="Search for Fruit or Legume">
+      <hr id="line">
+    </div>
+    <div class="lists">
+      <div class="list1">
+        <h2>List of Fruits</h2>
+        <ul class="fruit">
+          <div><li>Fruits! - Apple</li></div>
+          <div><li>Fruits! - Mangoes</li></div>
+        </ul>
+      </div>
+      <div class="list2">
+        <h2>List of Fruits & Legumes</h2>
+        <ul class="mix">
+          <li>Fruits! - Pineapples</li>
+          <li>Fruits! - Bananas</li>
+          <li>Legumes! - Potato</li>
+          <li>Legumes! - Lentils</li>
+        </ul>
+      </div>
+      <div class="list3">
+        <h2>List Of Legumes</h2>
+        <ul class="legumes">
+          <li>Legumes! - Broccoli</li>
+          <li>Legumes! - Green Beans</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="./action.js"></script>
+</body>
+</html>
